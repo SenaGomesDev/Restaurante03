@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/additional-methods.min.js"></script>
+</head>
+
+<body>
+    <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
+        <div class="container">
+            <h1 class="navbar-brand m-0 section-title">Feijoada da Vovó</h1>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
+                <ul class="nav nav-pills d-block d-md-flex">
+                    <li class="nav-item fw-bold">
+                        <a href="#sobre-o-restaurante " class="nav-link active">
+                            <i class="bi bi-house-door me-1"></i>
+                            Sobre o restaurante
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#eventos" class="nav-link">
+                            <i class="bi bi-calendar-check me-1"></i>
+                            Eventos
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#cardapio" class="nav-link">
+                            <i class="bi bi-card-text me-1"></i>
+                            Nosso cardápio
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#fale-conosco" class="nav-link">
+                            <i class="bi bi-chat-left-text me-1"></i>
+                            Fale conosco
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="cabecalho" data-bs-smooth-scroll="true">
+        <section id="sobre-o-restaurante">
+            <div class="carousel slide py-2 px-2" data-bs-ride="carousel" id="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="2000">
+                        <img src="images/slides/slide1.png" alt="Foto do espaço interno do restaurante"
+                            class="d-block mx-auto rounded">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="images/slides/slide2.png" alt="Duas taças de vinho" class="d-block mx-auto rounded">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="images/slides/slide3.png" alt="Uma mesa com comida" class="d-block mx-auto rounded">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel" class="active" data-bs-slide-to="0"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                </div>
+            </div>
+            <div class="pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img src="images/feijoada/unnamed.png" alt="Foto do espaço interno do restaurante">
+                        </div>
+                        <div class="col-md-7 mt-3 mt-md-0">
+                            <h2 class="section-title">Sobre <span class="text-colored">o restaurante</span></h2>
+                            <p>A Feijoada da Vovó é um restaurante especializado em comida típica nordestina, com
+                                destaque para a feijoada, a comida baiana e o pirão de aipim. O restaurante é conhecido
+                                por sua atmosfera aconchegante e familiar, e por servir pratos deliciosos e fartos.
+
+                                A feijoada da Feijoada da Vovó é feita com ingredientes frescos e de qualidade, e é
+                                servida com acompanhamentos como arroz branco, farofa, couve refogada e laranja. A
+                                comida baiana é uma das especialidades do restaurante, e inclui pratos como acarajé,
+                                vatapá e moqueca. O pirão de aipim é um prato típico do Nordeste, e é feito com aipim
+                                cozido e moído, e é servido com camarão ou peixe.</p>
+                            <h3 class="section-title">Sobre <span class="text-colored">o espaço</span></h3>
+                            <p>Atualmente atendemos via Delivery, logo mais estaremos preparando um espaço físico
+                                especial para vocês!</p>
+                            <ul>
+                                <li>Comida típica nordestina</li>
+                                <li>Pratos deliciosos e fartos</li>
+                                <li>Ingredientes frescos e de qualidade</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="eventos" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center">Para todas <span class="text-colored">as ocasiões</span></h2>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <img src="images/feijoada/familia2.webp" alt="" class="d-block w-100 rounded mb-2 px-2">
+                    <h3 class="section-title text-colored fs-4">
+                        <i class="bi bi-calendar-heart-fill"></i>
+                        Finais de Semana
+                    </h3>
+                    <p>
+                        Quer saborear uma comidinha diferente sem perder o gosto do que é bom, levamos o nosso tempero
+                        até você!
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <img src="images/eventos/casamento.jpg" alt="" class="d-block w-100 rounded mb-2 px-2">
+                    <h3 class="section-title text-colored fs-4">
+                        <i class="bi bi-arrow-through-heart-fill"></i>
+                        Eventos
+                    </h3>
+                    <p>
+                        Cobrimos o seu evento com o que á de melhor na cidade!
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <img src="images/eventos/confraternizacoes.jpg" alt="" class="d-block w-100 rounded mb-2 px-2">
+                    <h3 class="section-title text-colored fs-4">
+                        <i class="bi bi-people-fill"></i>
+                        Datas comemorativas
+                    </h3>
+                    <p>
+                        Semana santa, feriados, final de ano, sempre preparamos cardápio variado e de acordo com tal
+                        ocasião.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="cardapio" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center mb-5">
+                        Nosso <span class="text-colored">cardápio</span>
+                    </h2>
+                </div>
+                <div class="row">
+                    <aside class="col-md-2">
+                        <nav class="nav nav-pilss flex-columm nav-cardapio">
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#bebidas-sem-alcool"
+                                class="fw-bold text-start nav-link text-colored active rounded">Bebidas não
+                                Alcoólicas</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#bebidas-alcoolicas"
+                                class="fw-bold text-start nav-link text-colored rounded">Bebidas Alcoólicas</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#entradas"
+                                class="fw-bold text-start nav-link text-colored rounded">Entradas</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#pratos-principais"
+                                class="fw-bold text-start nav-link text-colored rounded">Pratos principais</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#sobremesas"
+                                class="fw-bold text-start nav-link text-colored rounded">Sobremesas</button>
+                        </nav>
+                    </aside>
+                    <div class="col-md-10">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="bebidas-sem-alcool">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cardapio/bebidas/coca-cola.jpg"
+                                            alt="Coca-cola" />
+                                        <h5 class="text-colored fw-bold mt-2">Coca-Cola</h5>
+                                        <p>
+                                            Coca-cola 350ml, 0 ou com acúcar.
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cardapio/bebidas/suco.jpg" alt="Suco" />
+                                        <h5 class="text-colored fw-bold mt-2">Suco de laranja</h5>
+                                        <p>
+                                            Suco da fruta.
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cardapio/bebidas/coca-cola.jpg"
+                                            alt="Coca-cola" />
+                                        <h5 class="text-colored fw-bold mt-2">Coca-Cola</h5>
+                                        <p>
+                                            Coca-cola 350ml, 0 ou com acúcar.
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cardapio/bebidas/coca-cola.jpg"
+                                            alt="Coca-cola" />
+                                        <h5 class="text-colored fw-bold mt-2">Coca-Cola</h5>
+                                        <p>
+                                            Coca-cola 350ml, 0 ou com acúcar.
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cardapio/bebidas/coca-cola.jpg"
+                                            alt="Coca-cola" />
+                                        <h5 class="text-colored fw-bold mt-2">Coca-Cola</h5>
+                                        <p>
+                                            Coca-cola 350ml, 0 ou com acúcar.
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cardapio/bebidas/coca-cola.jpg"
+                                            alt="Coca-cola" />
+                                        <h5 class="text-colored fw-bold mt-2">Coca-Cola</h5>
+                                        <p>
+                                            Coca-cola 350ml, 0 ou com acúcar.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="bebidas-alcoolicas">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cardapio/bebidas/cerveja.jpg"
+                                            alt="Cerveja" />
+                                        <h5 class="text-colored fw-bold mt-2">Cerveja</h5>
+                                        <p>
+                                            Nacionais e importadas.
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cardapio/bebidas/vinho.jpg"
+                                            alt="Vinho" />
+                                        <h5 class="text-colored fw-bold mt-2">Vinho</h5>
+                                        <p>
+                                            Tinto ou suave.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="entradas">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/feijoada/torresmo.webp"
+                                            alt="Torresmo de porco" />
+                                        <h5 class="text-colored fw-bold mt-2">Torresmo de Porco</h5>
+                                        <p>
+                                            Acompanha limão e molho especial.
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/feijoada/torresmo.webp"
+                                            alt="Torresmo de porco" />
+                                        <h5 class="text-colored fw-bold mt-2">Torresmo de Porco</h5>
+                                        <p>
+                                            Acompanha limão e molho especial.
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/feijoada/torresmo.webp"
+                                            alt="Torresmo de porco" />
+                                        <h5 class="text-colored fw-bold mt-2">Torresmo de Porco</h5>
+                                        <p>
+                                            Acompanha limão e molho especial.
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/feijoada/torresmo.webp"
+                                            alt="Torresmo de porco" />
+                                        <h5 class="text-colored fw-bold mt-2">Torresmo de Porco</h5>
+                                        <p>
+                                            Acompanha limão e molho especial.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="pratos-principais">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/feijoada/Feijoada.png" alt="Feijoada" />
+                                        <h5 class="text-colored fw-bold mt-2">Feijoada</h5>
+                                        <p>
+                                            Acompanha: Arroz branco, farofa, couve refogada e abacaxi.
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/feijoada/Comida baiana.jpeg"
+                                            alt="Comida Baiana" />
+                                        <h5 class="text-colored fw-bold mt-2">Comida Baiana</h5>
+                                        <p>
+                                            Acompanha: Arroz branco, feijão fradinho, vatapá. caruru e fafora amarela.
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/feijoada/Pirão.jpg"
+                                            alt="Pirão de Aipim" />
+                                        <h5 class="text-colored fw-bold mt-2">Pirão de Aipim</h5>
+                                        <p>
+                                            Acompanha: Pirão de aipim, misto de carne e calabresa e vinagrete.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="sobremesas">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/feijoada/mousse maracuja.jpg"
+                                            alt="Mousse Maracujá" />
+                                        <h5 class="text-colored fw-bold mt-2">Mousse Maracujá</h5>
+                                        <p>
+                                            Mousse sabor de Maracujá
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/feijoada/mousse limao.webp"
+                                            alt="Mousse de limão" />
+                                        <h5 class="text-colored fw-bold mt-2">Mousse Limão</h5>
+                                        <p>
+                                            Mousse sabor de Limão.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="fale-conosco" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="h2 section-title text-center"> Fale<span class="text-colored">conosco</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-7 mb-5">
+                        <form>
+                            <div class="mb-3">
+                                <label for="nome" class="form-label fw-bold text-colored">Seu nome</label>
+                                <input type="text" id="nome" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label fw-bold text-colored">Seu e-mail</label>
+                                <input type="email" id="email" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefone" class="form-label fw-bold text-colored">Seu telefone
+                                    (opcional)</label>
+                                <input type="tel" id="telefone" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensagem" class="form-label fw-bold text-colored">Sua mensagem</label>
+                                <textarea class="form-control" id="mensagem" required></textarea>
+                            </div>
+                            <button type="submit" class="btn fw-bold">Enviar</button>
+                        </form>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="row">
+                            <h3 class="section-title fs-4 text-colored">
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                Redes sociais
+                            </h3>
+                            <ul class="social-links">
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="bi bi-facebook text-colored"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5 ms-1 me-1">
+                                    <a href="#"></a>
+                                    <i class="bi bi-instagram text-colored"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="bi bi-whatsapp text-colored"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row mt-4">
+                            <h3 class="section-title fs-4 text-colored">
+                                <i class="bi bi-cursor-pills"></i>
+                                Endereço
+                            </h3>
+                        </div>
+                        <p>
+                            Rua Teste exemplo nº 145, Bairro Bootstrap - São Paulo - SP
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script>
+        $(document).ready(function () {
+            $('#telefone').mask("(00) 00000-0000");
+
+            $("#formulario").validate({
+                rules: {
+                    nome: {
+                        required: true
+                    },
+                    email: {
+                        required: true,
+                        email: true
+                    },
+                    telefone: {
+                        required: true
+                    }
+                },
+                messages: {
+                    nome: "Por favor, insira seu nome.",
+                    email: "Por favor, insira um endereço de e- mail válido.",
+                    telefone: "Por favor, insira seu número de telefone."
+                },
+                submitHandler: function (form) {
+                    alert("Formulário enviado com sucesso!");
+                    return false; 
+                }
+            });
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
